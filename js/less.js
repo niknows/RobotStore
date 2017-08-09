@@ -25,26 +25,24 @@
     });
   }
 
+// //AJAX Loader
+//   $body = $("body");
+//
+//   $(document).on({
+//       ajaxStart: function() { $body.addClass("loading");    },
+//        ajaxStop: function() { $body.removeClass("loading"); }
+//   });
+
+// //Initiates an AJAX request on click
+//   $(document).on("click", function(){
+//       $.get("/mockjax");
+// });
+
+
+//List-Array of store products
 var productList = [
   'RoboDog', 'ButlerBot', 'MegaMan', 'HelloRobot', 'Inteli3', 'Inteli5', 'Inteli7', 'Ram8G', 'Ram16G', 'VRHelmet', '3DScreen', 'StereoSpeakers', 'BlueToothKeyboard', 'WirelessMouse', 'PortableMonitor', 'RoboSkin1', 'RoboSkin2', 'RoboCase'
 ];
-
-// Date/Time Function
-  // function startTime() {
-  //     var today = new Date();
-  //     var h = today.getHours();
-  //     var m = today.getMinutes();
-  //     var s = today.getSeconds();
-  //     m = checkTime(m);
-  //     s = checkTime(s);
-  //     document.getElementById('txt').innerHTML =
-  //     h + ":" + m + ":" + s;
-  //     var t = setTimeout(startTime, 500);
-  // }
-  // function checkTime(i) {
-  //     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  //     return i;
-  // }
 
   // Script from robots.html begining on line 89
   // <script>

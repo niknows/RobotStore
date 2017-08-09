@@ -113,12 +113,12 @@ nav ul li > a:hover {
 #welcomeimage {
   position: relative;
   top: 100px;
-  padding-bottom: 125px;
+  margin-bottom: 125px;
 }
 #mrwelcomeimage {
   position: relative;
   top: 100px;
-  padding-bottom: 125px;
+  margin-bottom: 125px;
 }
 
 #coffeeofthemonth {
@@ -192,3 +192,25 @@ a {
   font-family: @primary-store-font;
 }
 //End Contactd page styles
+
+//Begin page loader
+.loader {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8)
+    url('../images/bert2-loader.gif')
+    50% 50%
+    no--repeat;
+}
+body.loading {
+  overflow: hidden;
+}
+body.loading .loader {
+  display: block;
+}
+//End page loader
