@@ -1,0 +1,194 @@
+// Begin LESS variables
+@primary-color: #B8C4CC; //light grey
+@primary-height: 100px;
+@primary-width: 100px;
+@primary-top: 10px;
+@primary-border-radius: 5px;
+@primary-font-size: 18px;
+@primary-opacity: 1.0;
+@primary-store-font: trebuchet MS;
+@primary-product-font: 'Audiowide';
+//End LESS variables
+
+body {
+  background-color: @primary-color;
+}
+
+//Begin header styles
+.headerlogo { img{
+  position: fixed;
+  top: @primary-top -5;
+  z-index: 1;
+  left: 8px;
+  height: 42px;
+  width: 52px;
+  border-color: Red;
+  border-style: inset;
+  border-width: 2px;
+  border-radius: @primary-border-radius;
+}}
+#headername{
+  position: fixed;
+  top: @primary-top + 45px;
+  z-index: 1;
+  left: 8px;
+  padding: 10px 0px 20px 0px;
+  font-size: @primary-font-size + 10;
+  -webkit-text-fill-color: grey;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: red;
+  text-shadow: 4px 4px 4px #aaa;
+  font-family: @primary-product-font;
+}
+//End header styles
+
+//Begin searchbox styles
+.searchbox {
+  position: fixed;
+  top: @primary-top - 5;
+  right: 15px;
+  background-color: @primary-color;
+  border: 2px solid black;
+  border-radius: @primary-border-radius;
+  font-size: @primary-font-size - 2;
+  font-family: @primary-store-font;
+  padding: 8px 0px 8px 5px;
+  }
+//End searchbox styles
+
+// Begin nav bar sytles
+nav {
+  position: fixed;
+  z-index: 1;
+  top: @primary-top - 5;
+  width: 45%;
+  right: 50px;
+  left: 80px;
+}
+.navbar-background {
+  background-color: #747474; //Dark grey
+  padding: 0px 0px 35px 5px;
+  height: @primary-height - 85;
+  border-radius: @primary-border-radius + 5;
+  text-shadow: 1px 1px 1px black;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
+  inset 0 10px rgba(255, 255, 255, 0.2),
+  inset 0 10px 20px rgba(255, 255, 255, 0.25),
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+}
+.navlink {
+  position: relative;
+  top: @primary-top - 12;
+  float: left;
+  font-size: @primary-font-size;
+  font-family: @primary-product-font;
+  padding: 0px 10px 0px 20px;
+  color: white;
+  opacity: @primary-opacity -1.0;
+  text-decoration: none;
+  border-left: 1px solid black;
+}
+.navbar-background li:first-child a {
+  border-left: none;
+}
+.navlink.active {
+  color: red;
+}
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+nav ul li {
+  display: block;
+}
+nav ul li > a:hover {
+  text-decoration: underline;
+  color: @primary-color;
+}
+//End navigation bar styles
+
+//Begin image styles
+#welcomeimage {
+  position: relative;
+  top: 100px;
+  padding-bottom: 125px;
+}
+#mrwelcomeimage {
+  position: relative;
+  top: 100px;
+  padding-bottom: 125px;
+}
+
+#coffeeofthemonth {
+  position: relative;
+}
+//End image styles
+
+#welcometext {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 2px outset black;
+  text-align: justify;
+  font-family: @primary-store-font;
+}
+
+//Begin footer styles
+footer {
+  //background-color: #000000; //Dark grey
+  padding: 0px 0px 35px 5px;
+  height: @primary-height + 30;
+  text-shadow: 1px 1px 1px black;
+  border-top: 1px solid rgba(0, 0, 0, 1.0);
+  border-radius: @primary-border-radius + 5;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
+  inset 0 10px rgba(255, 255, 255, 0.2),
+  inset 0 10px 20px rgba(255, 255, 255, 0.25),
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+}
+.address {
+  color: white;
+  font-size: @primary-font-size;
+  font-family: @primary-store-font;
+  padding-left: 10px;
+}
+.smalltext, .textcontent {
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  font-size: @primary-font-size -3;
+  font-family: @primary-store-font;
+}
+a {
+  color: red;
+}
+//End footer styles
+
+//Begin robot page styles
+#robo1 h4, #robo2 h4, #robo3 h4 {
+  font-family: @primary-product-font;
+}
+#robo1 h5, #robo2 h5, #robo3 h5 {
+  font-family: @primary-product-font;
+}
+//End robot page styles
+
+//Begin computers (hardware) page styles
+#hardwareoptions {
+  font-family: @primary-store-font;
+}
+//End computers (hardware) page styles
+
+//Begin About page styles
+#history {
+  font-family: @primary-store-font;
+}
+//End About page styles
+
+//begin Contact page styles
+#contactForm {
+  font-family: @primary-store-font;
+}
+//End Contactd page styles
