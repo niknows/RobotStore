@@ -46,8 +46,12 @@ body {
 .searchbox {
   position: fixed;
   top: @primary-top - 5;
-  right: 15px;
   background-color: @primary-color;
+  background-image: url('../images/searchicon.png');
+  background-position: 150px;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  right: 15px;
   border: 2px solid black;
   border-radius: @primary-border-radius;
   font-size: @primary-font-size - 2;
@@ -106,6 +110,7 @@ nav ul li {
 nav ul li > a:hover {
   text-decoration: underline;
   color: @primary-color;
+  transform: scaleY(1.1);
 }
 //End navigation bar styles
 
@@ -191,26 +196,49 @@ a {
 #contactForm {
   font-family: @primary-store-font;
 }
-//End Contactd page styles
+input:focus {
+  background-color: yellow
+}
+textarea:focus {
+  background-color: yellow
+}
+//End Contact page styles
 
-//Begin page loader
-.loader {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
+//Sample Search Filter
+#myInput {
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 2%;
   width: 100%;
-  background: rgba(255, 255, 255, .8)
-    url('../images/bert2-loader.gif')
-    50% 50%
-    no--repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
-body.loading {
-  overflow: hidden;
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-body.loading .loader {
-  display: block;
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
 }
-//End page loader
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
