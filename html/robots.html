@@ -31,21 +31,98 @@
       </nav>
   </header>
 
-  <!-- <input placeholder="Search Me" id="box" type="text" />
+<div class="container">
+  <ul id="list" class ="noListStyle" style="list-style:none">
+  <div class="row">
+    <li>
+    <div class="col-md-4">
+      <div class="thumbnail">
 
-  <ul class="navList">
-      <li>apples</li>
-      <li>apricots</li>
-      <li>acai</li>
-      <li>blueberry</li>
-      <li>bananas</li>
-      <li>cherry</li>
-      <li>coconut</li>
-      <li>donut</li>
-      <li>durean</li>
-  </ul> -->
-<ul id="robots" style="list-style:none">
- <li id="robo1">
+          <a href="../images/roboDog.png" target="_blank">
+            <img class="" src="../images/roboDog.png" alt "RobotDog" height="200px">
+            <div class="caption">
+              <p>
+                R.E.T.
+                <br>
+                This was our first robot.  He was modeled after the famous movie character E.T.
+              </p>
+            </div>
+          </a>
+
+      </div>
+    </div>
+  </li>
+  <li>
+  <div class="col-md-4">
+    <div class="thumbnail">
+
+        <a href="../images/robot2.png" target="_blank">
+          <img class="" src="../images/robot2.png" alt "Butler Bot" height="200px">
+          <div class="caption">
+            <p>
+              Butler Bot
+              <br>
+              This was our second robot. He makes a mean Martini!
+            </p>
+          </div>
+        </a>
+
+    </div>
+  </div>
+</li>
+<li>
+<div class="col-md-4">
+  <div class="thumbnail">
+
+      <a href="../images/robot3.png" target="_blank">
+        <img class="" src="../images/robot3.png" alt "Butler Bot" height="200px">
+        <div class="caption">
+          <p>
+            Mega Man
+            <br>
+            This is our newest model. This one will follow you around the house.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  </li>
+</div>
+</ul>
+</div>
+
+<script type="text/javascript">
+/* ROBOT SEARCH FILTER*/
+(function ($) {
+  jQuery.expr[':'].Contains = function(a,i,m){
+    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+  };
+  function listFilter(header, list) {
+    $('#searchbox')
+    .change( function () {
+      var filter = $(this).val();
+      if(filter) {
+        $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
+        $(list).find("a:Contains(" + filter + ")").parent().slideDown();
+      } else {
+        $(list).find("li").slideDown();
+      }
+      return false;
+    })
+    .keyup( function () {
+      $(this).change();
+    });
+    }
+    $(function () {
+      listFilter($("#header"), $("#list"));
+    });
+  }(jQuery));
+</script>
+
+
+<!-- This was my original code for the robot list.  Changes need to be made
+"see above", in order to get the filering to work.
+                 <li id="robo1">
    <br><br><br>
    <h4>
    <br><label for="imgrobo1">  Name:</label>
@@ -56,7 +133,6 @@
    He was modeled after the famous movie character E.T.</h5>
  </li>
 
- <!-- <li id="robo2"> -->
   <li>
   <h4>
   <br><label for="imgrobo2">  Name:</label>
@@ -76,9 +152,9 @@
   <br>This is our newest model.
    This one will follow you around the house.</h5>
  </li>
-</ul>
+</ul> -->
 
-<!-- Sample Search Filter -->
+<!-- Sample Search Filter
 <h2>My Phonebook</h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
@@ -96,7 +172,7 @@
   <li><a href="#">Calvin</a></li>
   <li><a href="#">Christina</a></li>
   <li><a href="#">Cindy</a></li>
-</ul>
+</ul> -->
 
 <footer>
   <p class="address">Our address is: <br>Mr. Robot Store<br>C/O Sales Dept<br>1011 Crater Ave, Moon City: THE MOON</p>

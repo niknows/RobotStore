@@ -1,4 +1,4 @@
-// Begin LESS variables
+// 'LESS' VARIABLES
 @primary-color: #B8C4CC; //light grey
 @primary-height: 100px;
 @primary-width: 100px;
@@ -8,13 +8,12 @@
 @primary-opacity: 1.0;
 @primary-store-font: trebuchet MS;
 @primary-product-font: 'Audiowide';
-//End LESS variables
 
 body {
   background-color: @primary-color;
 }
 
-//Begin header styles
+//HEADER STYLES
 .headerlogo { img{
   position: fixed;
   top: @primary-top -5;
@@ -40,9 +39,9 @@ body {
   text-shadow: 4px 4px 4px #aaa;
   font-family: @primary-product-font;
 }
-//End header styles
+//END HEADER STYLES
 
-//Begin searchbox styles
+//SEARCHBOX STYLES
 .searchbox {
   position: fixed;
   top: @primary-top - 5;
@@ -74,9 +73,9 @@ body {
     font-family: @primary-store-font;
     padding: 8px 0px 8px 5px;
     }
-//End searchbox styles
+//END SEARCHBOX STYLES
 
-// Begin nav bar sytles
+// NAVBAR STYLES
 nav {
   position: fixed;
   z-index: 1;
@@ -128,9 +127,9 @@ nav ul li > a:hover {
   color: @primary-color;
   transform: scaleY(1.1);
 }
-//End navigation bar styles
+//END NAVBAR STYLES
 
-//Begin image styles
+//IMAGE STYLES
 #welcomeimage {
   position: relative;
   top: 100px;
@@ -145,7 +144,7 @@ nav ul li > a:hover {
 #coffeeofthemonth {
   position: relative;
 }
-//End image styles
+//END IMAGE STYLES
 
 #welcometext {
   column-count: 2;
@@ -155,9 +154,12 @@ nav ul li > a:hover {
   font-family: @primary-store-font;
 }
 
-//Begin footer styles
+//FOOTER STYLES
 footer {
-  //background-color: #000000; //Dark grey
+  position: relative;
+  left:0px;
+  bottom:0px;
+  width:95%;
   padding: 0px 0px 35px 5px;
   height: @primary-height + 30;
   text-shadow: 1px 1px 1px black;
@@ -185,30 +187,28 @@ footer {
 a {
   color: red;
 }
-//End footer styles
+//END FOOTER STYLES
 
-//Begin robot page styles
-#robo1 h4, #robo2 h4, #robo3 h4 {
+//ROBOT PAGE STYLES
+.caption {
   font-family: @primary-product-font;
+  color: black;
 }
-#robo1 h5, #robo2 h5, #robo3 h5 {
-  font-family: @primary-product-font;
-}
-//End robot page styles
+//END ROBOT PAGE STYLES
 
-//Begin computers (hardware) page styles
+//COMPUTER (HARDWARE) PAGE STYLES
 #hardwareoptions {
   font-family: @primary-store-font;
 }
-//End computers (hardware) page styles
+//END COMPUTER (HARDWARE) PAGE STYLES
 
-//Begin About page styles
+//ABOUT PAGE STYLES
 #history {
   font-family: @primary-store-font;
 }
-//End About page styles
+//END ABOUT PAGE STYLES
 
-//begin Contact page styles
+//CONTACT PAGE STYLES
 #contactForm {
   font-family: @primary-store-font;
 }
@@ -218,43 +218,4 @@ input:focus {
 textarea:focus {
   background-color: yellow
 }
-//End Contact page styles
-
-//Sample Search Filter
-#myInput {
-  background-image: url('../images/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  background-size: 2%;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a.header {
-  background-color: #e2e2e2;
-  cursor: default;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
+//END CONTACT PAGE STYLES
