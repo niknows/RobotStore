@@ -18,6 +18,7 @@
             </a>
             <br><span id="headername">Mr. Robot</span>
             <input type="search" class="searchbox" placeholder="Search our store" />
+            <img id="loader" src="../images/bert2-loader.gif" />
         </div>
 
         <nav class="navbar-background">
@@ -31,22 +32,24 @@
         </nav>
     </header>
 
-    <form id="hardwareoptions">
-    <br><br><br><br><br><legend><strong>Select a CPU</strong></legend>
-      <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
-      <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
-      <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
+    <form onSubmit="return false;" id="hardwareOptions">
+    <br><br><br><br><br><legend><strong>Select a Processor</strong></legend>
+      <p><label for="i3"><input type="radio" name="Processor" value="Intel&reg Core i3" id="i3">Intel&reg Core i3</label></p>
+      <p><label for="i5"><input type="radio" name="Processor" value="Intel&reg Core i5" id="i5"></label>Intel&reg Core i5</p>
+      <p><label for="i7"><input type="radio" name="Processor" value="Intel&reg Core i7" id="i7"></label>Intel&reg Core i7</p>
 
-    <br><legend><strong>Select Ram</strong></legend>
-      <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
-      <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
+    <br><legend><strong>Select RAM</strong></legend>
+      <p><label for="8"><input type="radio" name="RAM" value="8GB DDR4" id="8">8GB DDR4</label></p>
+      <p><label for="16"><input type="radio" name="RAM" value="16GB DDR4" id="16">16GB DDR4</label></p>
 
     <br><legend><strong>Select Other Options</strong></legend>
-      <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
-      <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
-      <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
+      <p><label for="vrh"><input type="checkbox" name="Accessories" value="Virtual Reality Helmet" id="vrh">Virtual Reality Helmet</label></p>
+      <p><label for="3ds"><input type="checkbox" name="Accessories" value="3D Screen" id="3ds">3D Screen</label></p>
+      <p><label for="ss"><input type="checkbox" name="Accessories" value="Stereo Speakers" id="ss">Stereo Speakers</label></p>
+      <p><label for="ss"><input type="checkbox" name="Accessories" value="Blue Tooth Keyboard" id="btk">Blue Tooth Keyboard</label></p>
+      <p><label for="ss"><input type="checkbox" name="Accessories" value="Premium Backpack" id="pb">Premium Backpack</label></p>
   <p>
-    <button>Submit</button>
+    <button id="save">Submit</button>
   </p>
 </form>
 <footer>

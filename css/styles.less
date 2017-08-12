@@ -40,8 +40,12 @@ body {
   font-family: @primary-product-font;
 }
 //END HEADER STYLES
-
-//SEARCHBOX STYLES
+#loader {
+  position: fixed;
+  top: @primary-top + 40;
+  right: 15px;
+}
+//SEARCHBOX AND TEXTBOX STYLES
 .searchbox {
   position: fixed;
   top: @primary-top - 5;
@@ -58,22 +62,13 @@ body {
   padding: 8px 0px 8px 5px;
   }
 
-  #searchbox {
-    position: fixed;
-    top: @primary-top - 5;
-    background-color: @primary-color;
-    background-image: url('../images/searchicon.png');
-    background-position: 150px;
-    background-repeat: no-repeat;
-    background-size: 10%;
-    right: 15px;
-    border: 2px solid black;
-    border-radius: @primary-border-radius;
-    font-size: @primary-font-size - 2;
-    font-family: @primary-store-font;
-    padding: 8px 0px 8px 5px;
-    }
-//END SEARCHBOX STYLES
+  input:focus {
+    background-color: yellow
+  }
+  textarea:focus {
+    background-color: yellow
+  }
+  //END SEARCHBOX AND TEXTBOX STYLES
 
 // NAVBAR STYLES
 nav {
@@ -144,6 +139,15 @@ nav ul li > a:hover {
 #coffeeofthemonth {
   position: relative;
 }
+.thumbnail img:hover {
+  background-color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 30px 10px #990000;
+  -moz-box-shadow: 0px 0px 30px 10px #990000;
+  box-shadow: 0px 0px 30px 10px #990000;
+}
 //END IMAGE STYLES
 
 #welcometext {
@@ -185,7 +189,7 @@ footer {
   font-family: @primary-store-font;
 }
 a {
-  color: red;
+  color: blue;
 }
 //END FOOTER STYLES
 
@@ -193,6 +197,10 @@ a {
 .caption {
   font-family: @primary-product-font;
   color: black;
+}
+
+.row, col-md-4, .thumbnail {
+  display: inline;
 }
 //END ROBOT PAGE STYLES
 
@@ -212,10 +220,8 @@ a {
 #contactForm {
   font-family: @primary-store-font;
 }
-input:focus {
-  background-color: yellow
-}
-textarea:focus {
-  background-color: yellow
-}
 //END CONTACT PAGE STYLES
+mark {
+  background-color: purple;
+  color: white;
+}

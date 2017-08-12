@@ -17,7 +17,8 @@
               <img src="../images/logo.jpg" />
           </a>
           <br><span id="headername">Mr. Robot</span>
-          <input type="text" id="searchbox" placeholder="Search For Robots" />
+          <input type="text" class="searchbox" placeholder="Search For Robots" />
+          <img id="loader" src="../images/bert2-loader.gif" />
       </div>
 
       <nav class="navbar-background">
@@ -32,23 +33,22 @@
   </header>
 
 <div class="container">
-  <ul id="list" class ="noListStyle" style="list-style:none">
+  <ul id="list" class="noListStyle" style="list-style:none">
   <div class="row">
     <li>
     <div class="col-md-4">
       <div class="thumbnail">
 
-          <a href="../images/roboDog.png" target="_blank">
+          <a id="robot1" href="../images/roboDog.png" target="_blank">
+            <p><br><br><br><br><br><br><br>
             <img class="" src="../images/roboDog.png" alt "RobotDog" height="200px">
             <div class="caption">
-              <p>
-                R.E.T.
+               R.E.T.
                 <br>
                 This was our first robot.  He was modeled after the famous movie character E.T.
               </p>
             </div>
           </a>
-
       </div>
     </div>
   </li>
@@ -56,7 +56,8 @@
   <div class="col-md-4">
     <div class="thumbnail">
 
-        <a href="../images/robot2.png" target="_blank">
+        <a id="robot2" href="../images/robot2.png" target="_blank">
+          <p><br><br><br><br>
           <img class="" src="../images/robot2.png" alt "Butler Bot" height="200px">
           <div class="caption">
             <p>
@@ -66,7 +67,6 @@
             </p>
           </div>
         </a>
-
     </div>
   </div>
 </li>
@@ -74,7 +74,8 @@
 <div class="col-md-4">
   <div class="thumbnail">
 
-      <a href="../images/robot3.png" target="_blank">
+      <a id="robot3" href="../images/robot3.png" target="_blank">
+        <p><br><br><br><br>
         <img class="" src="../images/robot3.png" alt "Butler Bot" height="200px">
         <div class="caption">
           <p>
@@ -91,93 +92,12 @@
 </ul>
 </div>
 
-<script type="text/javascript">
-/* ROBOT SEARCH FILTER*/
-(function ($) {
-  jQuery.expr[':'].Contains = function(a,i,m){
-    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-  };
-  function listFilter(header, list) {
-    $('#searchbox')
-    .change( function () {
-      var filter = $(this).val();
-      if(filter) {
-        $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
-        $(list).find("a:Contains(" + filter + ")").parent().slideDown();
-      } else {
-        $(list).find("li").slideDown();
-      }
-      return false;
-    })
-    .keyup( function () {
-      $(this).change();
-    });
-    }
-    $(function () {
-      listFilter($("#header"), $("#list"));
-    });
-  }(jQuery));
-</script>
-
-
-<!-- This was my original code for the robot list.  Changes need to be made
-"see above", in order to get the filering to work.
-                 <li id="robo1">
-   <br><br><br>
-   <h4>
-   <br><label for="imgrobo1">  Name:</label>
-     R.E.T.
-   </h4>
-   <img id="imgrobo1" src="../images/roboDog.png" width="200" height="200" alt="RoboDog R.E.T">
-   <h5>Description:<br>This was our first robot.
-   He was modeled after the famous movie character E.T.</h5>
- </li>
-
-  <li>
-  <h4>
-  <br><label for="imgrobo2">  Name:</label>
-   Butler.Bot</h4>
-  <img id="imgrobo2" src="../images/robot2.png" width="200" height="200" alt="Butler Bot">
-  <h5>Description:
-  <br>This was our second robot.
-   He makes a mean martini!</h5>
- </li>
-
- <li id="robo3">
-  <h4>
-  <br><label for="imgrobo3">  Name:</label>
-   Mega Man</h4>
-  <img id="imgrobo3" src="../images/robot3.png" width=200 height=200 alt="Mega Man">
-  <h5>Description:
-  <br>This is our newest model.
-   This one will follow you around the house.</h5>
- </li>
-</ul> -->
-
-<!-- Sample Search Filter
-<h2>My Phonebook</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<ul id="myUL">
-  <li><a href="#" class="header">A</a></li>
-  <li><a href="#">Adele</a></li>
-  <li><a href="#">Agnes</a></li>
-
-  <li><a href="#" class="header">B</a></li>
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#" class="header">C</a></li>
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-</ul> -->
-
-<footer>
-  <p class="address">Our address is: <br>Mr. Robot Store<br>C/O Sales Dept<br>1011 Crater Ave, Moon City: THE MOON</p>
-  <p class="smalltext">This page was generated on <time>09:25:04.123</time>
-  <br class="textcontent">All site contents is copyright:&nbsp&nbsp<a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-</footer>
+ <div class="footer">
+  <footer>
+   <p class="address">Our address is: <br>Mr. Robot Store<br>C/O Sales Dept<br>1011 Crater Ave, Moon City: THE MOON</p>
+   <p class="smalltext">This page was generated on <time>09:25:04.123</time>
+   <br class="textcontent">All site contents is copyright:&nbsp&nbsp<a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+  </footer>
+ </div>
 </body>
 </html>
