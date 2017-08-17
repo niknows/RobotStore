@@ -9,6 +9,11 @@
 @primary-store-font: trebuchet MS;
 @primary-product-font: 'Audiowide';
 
+a, u {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 body {
   background-color: @primary-color;
 }
@@ -32,7 +37,7 @@ body {
   z-index: 1;
   left: 8px;
   padding: 10px 0px 20px 0px;
-  font-size: @primary-font-size + 10;
+  font-size: @primary-font-size + 20;
   -webkit-text-fill-color: grey;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: red;
@@ -136,9 +141,9 @@ nav ul li > a:hover {
   margin-bottom: 125px;
 }
 
-#coffeeofthemonth {
-  position: relative;
-}
+// #coffeeofthemonth {
+//   position: relative;
+// }
 .thumbnail img:hover {
   background-color: white;
   -webkit-border-radius: 25px;

@@ -1,12 +1,14 @@
 //HARDWARE OPTIONS TO CONSOLE
 $(
   function() {
+    var list="";
     $("#save").click(function() {
         $(':input:checked',"#hardwareOptions").each(function() {
             if ($(this))
               console.log( $(this).attr('name') + ': ' + $(this).attr('value'));
-              // alert ( $(this).attr('name') + ': ' + $(this).attr('value'));
+              list += $(this).attr('name') + ': ' + $(this).attr('value')  + "\n";
           });
+          alert ("Congratulations! You have selected the following configuration for your new computer!" + "\n"  + "\n" + list);
 
       });
 
