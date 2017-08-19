@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <title>Mr Robot!</title>
-  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" href="css/styles.less">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-  <link rel="stylesheet/less" href="../css/styles.less" type="text/css" />
-  <script src="../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
-  <script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-  <script src="../js/less.js"></script>
-  <script src="../bower_components/less/dist/less.js" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">                                        <!-- BOOTSTRAP 3 MOBILE FIRST DIRECTIVE  -->
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />   <!-- Bootstrap Main Style-->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />             <!-- Bootstrap Theme Style-->
+  <link rel="stylesheet/less" href="../css/styles.less" type="text/css" />                                    <!-- Custom Style Sheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />  <!-- Awesome Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" type="text/css" />          <!-- Google Fonts-->
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="../bower_components/less/dist/less.js"></script>                   <!--Less JS-->
+  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>           <!--jQuery-->
+  <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>  <!--Bootstrap JS-->
 </head>
+
   <body>
     <header>
         <div>
@@ -21,14 +32,37 @@
             <img id="loader" src="../images/bert2-loader.gif" />
         </div>
 
-        <nav class="navbar-background">
-            <ul>
-              <li><a class="navlink" href="../index.html">Home</a></li>
-              <li><a class="navlink" href="robots.html">Robots</a></li>
-              <li><a class="navlink" href="computers.html">Hardware</a></li>
-              <li><a class="navlink active" href="contact.html">Contact</a></li>
-              <li><a class="navlink" href="about.html">About</a></li>
-            </ul>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">  <!-- Brand and toggle get grouped for better mobile display -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">   <!-- Collect the nav links, forms, and other content for toggling -->
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="robots.html">Robots</a></li>
+                <li><a href="computers.html">Hardware</a></li>
+                <li class="active"><a href="contact.html">Contacts</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+
+              <div id="right">
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  <img id="loader" src="../images/bert2-loader.gif" style="right:168px"/>
+                </form>
+              </div>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
         </nav>
     </header>
     <div id="mrwelcomeimage">
