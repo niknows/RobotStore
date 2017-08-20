@@ -1,4 +1,4 @@
-// 'LESS' VARIABLES
+// 'LESS' VARIABLE DELCARATIONS
 @primary-color: #B8C4CC; //light grey
 @primary-height: 100px;
 @primary-width: 100px;
@@ -12,13 +12,22 @@
 body {
   background-color: @primary-color;
 }
+//END LESS DELARATIONS
 
+//NAVBAR STYLES
 #right {
   position:fixed;
   right:10px;
 }
-//HEADER STYLES
 
+#loader {
+  position: fixed;
+  top: @primary-top + 40;
+  right: 24px;
+}
+//END NAVBAR STYLES
+
+//HEADER STYLES
 .headerlogo {
   img {
     position: fixed;
@@ -49,12 +58,6 @@ body {
 }
 //END HEADER STYLES
 
-#loader {
-  position: fixed;
-  top: @primary-top + 40;
-  right: 15px;
-}
-
 //SEARCHBOX AND TEXTBOX STYLES
 .searchbox {
   position: fixed;
@@ -72,89 +75,44 @@ body {
   padding: 8px 0 8px 5px;
 }
 
-input:focus {
+input[type="text"]:focus {
   background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
 }
-
+input[type="email"]:focus {
+  background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
 textarea:focus {
   background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
+
 }
 //END SEARCHBOX AND TEXTBOX STYLES
 
-// NAVBAR STYLES
-// nav {
-//   position: relative;
-//   z-index: 1;
-//   top: @primary-top - 5;
-//   width: 45%;
-//   right: 50px;
-//   left: 80px;
-// }
-
-.navbar-background {
-  background-color: #747474; //Dark grey
-  padding: 0 0 35px 5px;
-  height: @primary-height - 85;
-  border-radius: @primary-border-radius + 5;
-  text-shadow: 1px 1px 1px black;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.navlink {
-  position: relative;
-  top: @primary-top - 12;
-  float: left;
-  font-size: @primary-font-size;
-  font-family: @primary-product-font;
-  padding: 0 10px 0 20px;
-  color: white;
-  opacity: @primary-opacity -1.0;
-  text-decoration: none;
-  border-left: 1px solid black;
-}
-
-.navbar-background li:first-child a {
-  border-left: none;
-}
-
-.navlink.active {
-  color: red;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: block;
-}
-
-nav ul li > a:hover {
-  text-decoration: underline;
-  color: @primary-color;
-  transform: scaleY(1.1);
-}
-//END NAVBAR STYLES
-
 //IMAGE STYLES
+.logoImage {
+    position: relative;
+    max-height:50px;
+    max-width:50px;
+    margin-right: 5px;
+  }
 #welcomeimage {
   position: relative;
   top: 100px;
   margin-bottom: 125px;
 }
-
 #mrwelcomeimage {
   position: relative;
   top: 100px;
   margin-bottom: 125px;
 }
-// #coffeeofthemonth {
-//   position: relative;
-// }
-
+#coffeeofthemonth {
+  font-family: @primary-product-font;
+}
 .thumbnail img:hover {
   background-color: white;
   -webkit-border-radius: 25px;
@@ -173,44 +131,29 @@ nav ul li > a:hover {
   text-align: justify;
   font-family: @primary-store-font;
 }
+
 //FOOTER STYLES
-
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 95%;
-  padding: 0 0 35px 5px;
-  height: @primary-height + 30;
-  text-shadow: 1px 1px 1px black;
-  border-top: 1px solid rgba(0, 0, 0, 1.0);
-  border-radius: @primary-border-radius + 5;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.address {
-  color: white;
-  font-size: @primary-font-size;
-  font-family: @primary-store-font;
-  padding-left: 10px;
-}
-
-.smalltext,
-.textcontent {
-  color: white;
-  text-align: right;
-  padding-right: 10px;
-  font-size: @primary-font-size -3;
-  font-family: @primary-store-font;
-}
-
-a {
-  color: blue;
+.panel {
+  border-color: dark grey;
+  border-style: ridge;
+  border-width: 5px;
+  border-radius: 8px;
 }
 //END FOOTER STYLES
-//ROBOT PAGE STYLES
 
+//SPECIFIC PAGE STILES
+
+//HOME PAGE STYLES
+mark {
+  background-color: purple;
+  color: white;
+}
+//END HOME PAGE STYLES
+
+//ROBOT PAGE STYLES
+ul {
+  list-style: none;
+}
 .caption {
   font-family: @primary-product-font;
   color: black;
@@ -222,26 +165,22 @@ col-md-4 {
   display: inline;
 }
 //END ROBOT PAGE STYLES
-//COMPUTER (HARDWARE) PAGE STYLES
 
+//COMPUTER (HARDWARE) PAGE STYLES
 #hardwareoptions {
   font-family: @primary-store-font;
 }
 //END COMPUTER (HARDWARE) PAGE STYLES
-//ABOUT PAGE STYLES
 
-#history {
-  font-family: @primary-store-font;
-}
-//END ABOUT PAGE STYLES
+
 //CONTACT PAGE STYLES
-
 #contactForm {
   font-family: @primary-store-font;
 }
 //END CONTACT PAGE STYLES
 
-mark {
-  background-color: purple;
-  color: white;
+//ABOUT PAGE STYLES
+#history {
+  font-family: @primary-store-font;
 }
+//END ABOUT PAGE STYLES
