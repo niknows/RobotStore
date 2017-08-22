@@ -122,15 +122,12 @@ textarea:focus {
   -moz-box-shadow: 0 0 30px 10px #990000;
   box-shadow: 0 0 30px 10px #990000;
 }
-//END IMAGE STYLES
 
-#welcometext {
-  column-count: 2;
-  column-gap: 40px;
-  column-rule: 2px outset black;
-  text-align: justify;
-  font-family: @primary-store-font;
+.thumbnail {
+  background-color: transparent;
+  border: none;
 }
+//END IMAGE STYLES
 
 //FOOTER STYLES
 .panel {
@@ -142,11 +139,17 @@ textarea:focus {
 //END FOOTER STYLES
 
 //SPECIFIC PAGE STILES
-
-//HOME PAGE STYLES
+//HOME (INDEX) PAGE STYLES
 mark {
   background-color: purple;
   color: white;
+}
+#welcometext {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 2px outset black;
+  text-align: justify;
+  font-family: @primary-store-font;
 }
 //END HOME PAGE STYLES
 
@@ -158,29 +161,35 @@ ul {
   font-family: @primary-product-font;
   color: black;
 }
-
-.row,
-.thumbnail,
-col-md-4 {
-  display: inline;
-}
 //END ROBOT PAGE STYLES
 
 //COMPUTER (HARDWARE) PAGE STYLES
-#hardwareoptions {
+#hardwareOptions {
   font-family: @primary-store-font;
+  margin-left: 45px;
+  margin-right: 60%;
+}
+#robotWave {
+  float: right;
+  margin-top: 275px;
+  margin-right: 350px;
 }
 //END COMPUTER (HARDWARE) PAGE STYLES
 
-
 //CONTACT PAGE STYLES
+#mrwelcomeimage {
+  float: left;
+  margin-left: 45px;
+}
 #contactForm {
   font-family: @primary-store-font;
+  margin-left: 45px;
 }
 //END CONTACT PAGE STYLES
 
 //ABOUT PAGE STYLES
 #history {
   font-family: @primary-store-font;
+  margin-left: 45px;
 }
 //END ABOUT PAGE STYLES
