@@ -1,0 +1,195 @@
+// 'LESS' VARIABLE DELCARATIONS
+@primary-color: #B8C4CC; //light grey
+@primary-height: 100px;
+@primary-width: 100px;
+@primary-top: 10px;
+@primary-border-radius: 5px;
+@primary-font-size: 18px;
+@primary-opacity: 1.0;
+@primary-store-font: trebuchet MS;
+@primary-product-font: 'Audiowide';
+
+body {
+  background-color: @primary-color;
+}
+//END LESS DELARATIONS
+
+//NAVBAR STYLES
+#right {
+  position:fixed;
+  right:10px;
+}
+
+#loader {
+  position: fixed;
+  top: @primary-top + 40;
+  right: 24px;
+}
+//END NAVBAR STYLES
+
+//HEADER STYLES
+.headerlogo {
+  img {
+    position: fixed;
+    top: @primary-top -5;
+    z-index: 1;
+    left: 8px;
+    height: 42px;
+    width: 52px;
+    border-color: Red;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: @primary-border-radius;
+  }
+}
+
+#headername {
+  position: fixed;
+  top: @primary-top + 45px;
+  z-index: 1;
+  left: 8px;
+  padding: 10px 0 20px;
+  font-size: @primary-font-size + 20;
+  -webkit-text-fill-color: grey;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: red;
+  text-shadow: 4px 4px 4px #aaa;
+  font-family: @primary-product-font;
+}
+//END HEADER STYLES
+
+//SEARCHBOX AND TEXTBOX STYLES
+.searchbox {
+  position: fixed;
+  top: @primary-top - 5;
+  background-color: @primary-color;
+  background-image: url('../images/searchicon.png');
+  background-position: 150px;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  right: 15px;
+  border: 2px solid black;
+  border-radius: @primary-border-radius;
+  font-size: @primary-font-size - 2;
+  font-family: @primary-store-font;
+  padding: 8px 0 8px 5px;
+}
+
+input[type="text"]:focus {
+  background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+input[type="email"]:focus {
+  background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+textarea:focus {
+  background-color: yellow;
+  border: 2px solid red;
+  box-shadow: 0px 0px 10px 1px #000000;
+
+}
+//END SEARCHBOX AND TEXTBOX STYLES
+
+//IMAGE STYLES
+.logoImage {
+    position: relative;
+    max-height:50px;
+    max-width:50px;
+    margin-right: 5px;
+  }
+#welcomeimage {
+  position: relative;
+  top: 100px;
+  margin-bottom: 125px;
+}
+#mrwelcomeimage {
+  position: relative;
+  top: 100px;
+  margin-bottom: 125px;
+}
+#coffeeofthemonth {
+  font-family: @primary-product-font;
+}
+.thumbnail img:hover {
+  background-color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 30px 10px #990000;
+  -moz-box-shadow: 0 0 30px 10px #990000;
+  box-shadow: 0 0 30px 10px #990000;
+}
+
+.thumbnail {
+  background-color: transparent;
+  border: none;
+}
+//END IMAGE STYLES
+
+//FOOTER STYLES
+.panel {
+  border-color: dark grey;
+  border-style: ridge;
+  border-width: 5px;
+  border-radius: 8px;
+}
+//END FOOTER STYLES
+
+//SPECIFIC PAGE STILES
+//HOME (INDEX) PAGE STYLES
+mark {
+  background-color: purple;
+  color: white;
+}
+#welcometext {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 2px outset black;
+  text-align: justify;
+  font-family: @primary-store-font;
+}
+//END HOME PAGE STYLES
+
+//ROBOT PAGE STYLES
+ul {
+  list-style: none;
+}
+.caption {
+  font-family: @primary-product-font;
+  color: black;
+}
+//END ROBOT PAGE STYLES
+
+//COMPUTER (HARDWARE) PAGE STYLES
+#hardwareOptions {
+  font-family: @primary-store-font;
+  margin-left: 45px;
+  margin-right: 60%;
+}
+#robotWave {
+  float: right;
+  margin-top: 275px;
+  margin-right: 350px;
+}
+//END COMPUTER (HARDWARE) PAGE STYLES
+
+//CONTACT PAGE STYLES
+#mrwelcomeimage {
+  float: left;
+  margin-left: 45px;
+}
+#contactForm {
+  font-family: @primary-store-font;
+  margin-left: 45px;
+}
+//END CONTACT PAGE STYLES
+
+//ABOUT PAGE STYLES
+#history {
+  font-family: @primary-store-font;
+  margin-left: 45px;
+}
+//END ABOUT PAGE STYLES
