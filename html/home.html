@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mr Robot! Hardware</title>
+  <title>Mr Robot!</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">                                        <!-- BOOTSTRAP 3 MOBILE FIRST DIRECTIVE  -->
 
@@ -16,8 +16,6 @@
   <script type="text/javascript" src="../bower_components/less/dist/less.js"></script>                   <!--Less JS-->
   <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>           <!--jQuery-->
   <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>  <!--Bootstrap JS-->
-  <script type="text/javascript" src="../js/less.js"></script>
-
 </head>
 <body>
   <section class="content">
@@ -34,16 +32,15 @@
             <span class="icon-bar"></span>
           </button>
           <a class="" href="../index.html">
-            <img class="logoImage" src="../images/logo.jpg" width="60px" />
+            <img class="logoImage" src="../images/logo.jpg" width="60px"/>
           </a>
-
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">   <!-- Collect the nav links, forms, and other content for toggling -->
           <ul class="nav navbar-nav">
-            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="robots.html">Robots</a></li>
-            <li class="active"><a href="computers.html">Hardware</a></li>
+            <li><a href="computers.html">Hardware</a></li>
             <li><a href="contact.html">Contacts</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -54,28 +51,19 @@
   </header>
   </section>
 
-  <img id="robotWave" src="../images/robot-waving.gif" alt "Wave" style="width=100%" />
-
-    <form onsubmit="return false;" id="hardwareOptions">
-    <br><br><br><br><br><legend><strong>Select a Processor</strong></legend>
-      <p><label for="i3"><input type="radio" name="Processor" value="Intel&reg Core i3" id="i3">Intel&reg Core i3</label></p>
-      <p><label for="i5"><input type="radio" name="Processor" value="Intel&reg Core i5" id="i5">Intel&reg Core i5</label></p>
-      <p><label for="i7"><input type="radio" name="Processor" value="Intel&reg Core i7" id="i7">Intel&reg Core i7</label></p>
-
-    <br><legend><strong>Select RAM</strong></legend>
-      <p><label for="8"><input type="radio" name="RAM" value="8GB DDR4" id="8">8GB DDR4</label></p>
-      <p><label for="16"><input type="radio" name="RAM" value="16GB DDR4" id="16">16GB DDR4</label></p>
-
-    <br><legend><strong>Select Other Options</strong></legend>
-      <p><label for="vrh"><input type="checkbox" name="Accessories" value="Virtual Reality Helmet" id="vrh">Virtual Reality Helmet</label></p>
-      <p><label for="3ds"><input type="checkbox" name="Accessories" value="3D Screen" id="3ds">3D Screen</label></p>
-      <p><label for="ss"><input type="checkbox" name="Accessories" value="Stereo Speakers" id="ss">Stereo Speakers</label></p>
-      <p><label for="ss"><input type="checkbox" name="Accessories" value="Blue Tooth Keyboard" id="btk">Blue Tooth Keyboard</label></p>
-      <p><label for="ss"><input type="checkbox" name="Accessories" value="Premium Backpack" id="pb">Premium Backpack</label></p>
-  <p>
-    <button id="save">Submit</button>
+<div id="coffeeofthemonth">
+  <p><br /><br /><br /><strong><h3 style="margin-bottom:5px">&nbsp&nbsp&nbspWelcome to Mr Robot!</h3></strong>
+    <img src="../images/robot_hello.png" />
   </p>
-</form>
+</div>
+<section id="welcometext">
+  <span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lobortis ex. Suspendisse vestibulum varius porta. Ut ligula risus, fermentum nec elit eget, feugiat consequat diam. Donec accumsan tristique convallis. Curabitur sit amet facilisis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sollicitudin augue et metus volutpat pellentesque. Maecenas dui quam, iaculis at massa in, varius varius lectus.
+    Fusce efficitur justo sed lobortis efficitur. Sed vel quam at mi tristique convallis non id justo. Vestibulum molestie odio sed congue tempor. Mauris at nisl a risus finibus efficitur. Mauris quis luctus erat, id auctor tellus. Nulla vel suscipit metus. Donec porta dapibus eros et finibus. Maecenas suscipit nisl sed dictum luctus. Proin suscipit laoreet ante a dictum. Donec ornare, erat quis dignissim maximus, neque ex laoreet massa, sed convallis turpis turpis ut elit. Suspendisse varius augue ante, sed fermentum dui facilisis non. Nulla neque leo, placerat ut tempor quis, ornare sed lorem. Mauris egestas sem non magna semper lobortis.
+    <p><mark style="font-family:trebuchet MS"><em><strong>**Please note that our store is closed on Christmas Eve and Christmas Day.**</strong></em></mark></p>
+  </span>
+</section>
+
 <div class="container">
   <h3><br>Mr Robot Site Info</h3>
   <div class="panel panel-default">
@@ -85,4 +73,5 @@
   </div>
 </div>
 </body>
+
 </html>
