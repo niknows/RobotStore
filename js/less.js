@@ -1,6 +1,5 @@
 //HARDWARE OPTIONS TO CONSOLE
-$(
-  function() {
+$(function() {
     var list = "";
     $("#save").click(function() {
       $(':input:checked',"#hardwareOptions").each(function() {
@@ -37,6 +36,6 @@ $(
       });
   }
   $(function() {
-    listFilter($("#header"), $("#list"));
+    listFilter($(),$("#list"));
   });
 }(jQuery));
