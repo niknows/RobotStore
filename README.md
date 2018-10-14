@@ -1,4 +1,4 @@
-# RobotStore
+# Robot Store
 This is the first project from Front End Foundations Unit, building a Robot Store.  Woz U Full Stack .Net Web Dev program
 
 # Landing Page
